@@ -15,11 +15,11 @@ Create New Post | Laravel Blog
                 @csrf
                 <div class="form-group">
                   <label for="exampleFormControlInput1">Title</label>
-                  <input type="text" data-parsley-required="true" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter the title of your post">
+                  <input type="text" required maxlength="255" name="title" class="form-control" id="exampleFormControlInput1" placeholder="Enter the title of your post">
                 </div>
                 <div class="form-group">
                   <label for="exampleFormControlTextarea1">Post:</label>
-                  <textarea class="form-control" data-parsley-required="true" name="body" placeholder="Write away........" id="exampleFormControlTextarea1" rows="10"></textarea>
+                  <textarea class="form-control" required name="body" placeholder="Write away........" id="exampleFormControlTextarea1" rows="10"></textarea>
                 </div>
                 <button type="submit" class="btn btn-success btn-block">Save</button>
               </form>
